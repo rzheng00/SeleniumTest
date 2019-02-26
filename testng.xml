@@ -19,7 +19,8 @@
     <classes>
       <class name="web.FirstSample">
       	<methods>
-      		<exclude name="homePage"/>      	
+      		<exclude name="homePage"/>    
+      		  	
       	</methods>
       </class>
     </classes>
