@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test in IE(failed)" parallel="tests">
+    <parameter name="browser" value="Internet Explorer"/>
+    <classes>
+      <class name="web.FirstSample">
+        <methods>
+          <include name="searchWeather"/>
+          <include name="afterClass"/>
+          <include name="homePage"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- web.FirstSample -->
+    </classes>
+  </test> <!-- Test in IE(failed) -->
+  <test thread-count="5" name="Test in Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="web.FirstSample">
+        <methods>
+          <include name="ssoLogin"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- web.FirstSample -->
+    </classes>
+  </test> <!-- Test in Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
