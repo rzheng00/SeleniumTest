@@ -2,12 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16830" started-at="2019-02-26T15:09:25 GMT-08:00" finished-at="2019-02-26T15:09:42 GMT-08:00">
+  <suite name="Suite" duration-ms="15340" started-at="2019-02-26T16:15:40 GMT-08:00" finished-at="2019-02-26T16:15:55 GMT-08:00">
     <groups>
+      <group name="func">
+        <method signature="FirstSample.homePage()[pri:1, instance:web.FirstSample@31610302]" name="homePage" class="web.FirstSample"/>
+        <method signature="FirstSample.ssoLogin()[pri:0, instance:web.FirstSample@31610302]" name="ssoLogin" class="web.FirstSample"/>
+        <method signature="FirstSample.ssoLogin()[pri:0, instance:web.FirstSample@6ddf90b0]" name="ssoLogin" class="web.FirstSample"/>
+      </group> <!-- func -->
     </groups>
-    <test name="Test in IE" duration-ms="6615" started-at="2019-02-26T15:09:25 GMT-08:00" finished-at="2019-02-26T15:09:32 GMT-08:00">
+    <test name="Test in Chrome2" duration-ms="0" started-at="2019-02-26T16:15:40 GMT-08:00" finished-at="2019-02-26T16:15:40 GMT-08:00">
+    </test> <!-- Test in Chrome2 -->
+    <test name="Test in IE" duration-ms="6290" started-at="2019-02-26T16:15:40 GMT-08:00" finished-at="2019-02-26T16:15:46 GMT-08:00">
       <class name="web.FirstSample">
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:web.FirstSample@335eadca]" name="beforeClass" is-config="true" duration-ms="2560" started-at="2019-02-26T15:09:25 GMT-08:00" finished-at="2019-02-26T15:09:28 GMT-08:00">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:web.FirstSample@6ddf90b0]" name="beforeClass" is-config="true" duration-ms="2454" started-at="2019-02-26T16:15:40 GMT-08:00" finished-at="2019-02-26T16:15:42 GMT-08:00">
           <params>
             <param index="0">
               <value>
@@ -18,23 +25,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="ssoLogin()[pri:0, instance:web.FirstSample@335eadca]" name="ssoLogin" duration-ms="3967" started-at="2019-02-26T15:09:28 GMT-08:00" finished-at="2019-02-26T15:09:32 GMT-08:00">
+        <test-method status="PASS" signature="ssoLogin()[pri:0, instance:web.FirstSample@6ddf90b0]" name="ssoLogin" duration-ms="3753" started-at="2019-02-26T16:15:42 GMT-08:00" finished-at="2019-02-26T16:15:46 GMT-08:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ssoLogin -->
-        <test-method status="PASS" signature="searchWeather()[pri:2, instance:web.FirstSample@335eadca]" name="searchWeather" duration-ms="58" started-at="2019-02-26T15:09:32 GMT-08:00" finished-at="2019-02-26T15:09:32 GMT-08:00">
+        <test-method status="PASS" signature="searchWeather()[pri:2, instance:web.FirstSample@6ddf90b0]" name="searchWeather" duration-ms="47" started-at="2019-02-26T16:15:46 GMT-08:00" finished-at="2019-02-26T16:15:46 GMT-08:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWeather -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:web.FirstSample@335eadca]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-02-26T15:09:32 GMT-08:00" finished-at="2019-02-26T15:09:32 GMT-08:00">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:web.FirstSample@6ddf90b0]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-02-26T16:15:46 GMT-08:00" finished-at="2019-02-26T16:15:46 GMT-08:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- web.FirstSample -->
     </test> <!-- Test in IE -->
-    <test name="Test in Chrome" duration-ms="16830" started-at="2019-02-26T15:09:25 GMT-08:00" finished-at="2019-02-26T15:09:42 GMT-08:00">
+    <test name="Test in Chrome" duration-ms="15340" started-at="2019-02-26T16:15:40 GMT-08:00" finished-at="2019-02-26T16:15:55 GMT-08:00">
       <class name="web.FirstSample">
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:web.FirstSample@2038ae61]" name="beforeClass" is-config="true" duration-ms="3407" started-at="2019-02-26T15:09:25 GMT-08:00" finished-at="2019-02-26T15:09:29 GMT-08:00">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:web.FirstSample@31610302]" name="beforeClass" is-config="true" duration-ms="3328" started-at="2019-02-26T16:15:40 GMT-08:00" finished-at="2019-02-26T16:15:43 GMT-08:00">
           <params>
             <param index="0">
               <value>
@@ -45,15 +52,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="ssoLogin()[pri:0, instance:web.FirstSample@2038ae61]" name="ssoLogin" duration-ms="9306" started-at="2019-02-26T15:09:29 GMT-08:00" finished-at="2019-02-26T15:09:38 GMT-08:00">
+        <test-method status="PASS" signature="ssoLogin()[pri:0, instance:web.FirstSample@31610302]" name="ssoLogin" duration-ms="8624" started-at="2019-02-26T16:15:43 GMT-08:00" finished-at="2019-02-26T16:15:52 GMT-08:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ssoLogin -->
-        <test-method status="PASS" signature="homePage()[pri:1, instance:web.FirstSample@2038ae61]" name="homePage" duration-ms="4096" started-at="2019-02-26T15:09:38 GMT-08:00" finished-at="2019-02-26T15:09:42 GMT-08:00">
+        <test-method status="PASS" signature="homePage()[pri:1, instance:web.FirstSample@31610302]" name="homePage" duration-ms="3369" started-at="2019-02-26T16:15:52 GMT-08:00" finished-at="2019-02-26T16:15:55 GMT-08:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:web.FirstSample@2038ae61]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-02-26T15:09:42 GMT-08:00" finished-at="2019-02-26T15:09:42 GMT-08:00">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:web.FirstSample@31610302]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-02-26T16:15:55 GMT-08:00" finished-at="2019-02-26T16:15:55 GMT-08:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
