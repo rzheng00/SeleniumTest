@@ -1,6 +1,7 @@
 package web;
 
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +17,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import org.testng.asserts.SoftAssert;
 
 public class FirstSample {
 	private WebDriver driver;
@@ -56,7 +59,7 @@ public class FirstSample {
         //driver.quit();
     }
     
-    @Test(priority=0)
+    @Test(priority=0, groups= {"func"})
     public void ssoLogin() throws Exception{
     	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -90,18 +93,22 @@ public class FirstSample {
         System.out.println("1st case");
     }
     
-    @Test(priority=1)
+    @Test(priority=1, groups= {"func"})
     public void homePage() throws Exception{  
     	System.out.println("2nd case");
+    	
+    	SoftAssert sa = new SoftAssert();
 
         String search_text = "UserName";
         WebElement username = driver.findElement(By.name("username"));
 
         String text = username.getAttribute("id");
 
-        Assert.assertEquals(text, search_text, "Text not found!");
-        Assert.assertTrue(driver.getTitle().contains("ShiftSelect"));
+        sa.assertEquals(text, search_text, "Text not found!");
+        sa.assertTrue(driver.getTitle().contains("ShiftSelect"));
         System.out.println("2nd case ....done");
+        
+        sa.assertAll();
     }
     
     @Test(priority=2)

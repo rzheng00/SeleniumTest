@@ -14,7 +14,7 @@
     </classes>
   </test> 
  
-  <test name="Test in IE">
+  <test name="Test in IE">  	
   	<parameter name="browser" value="Internet Explorer"/> 	
     <classes>
       <class name="web.FirstSample">
@@ -25,4 +25,15 @@
       </class>
     </classes>
   </test> 
+  
+  
+  <test name="Test in Chrome2">
+  	<parameter name="browser" value="Chrome"/> 
+  	<groups>  		
+  		<run>
+  			<include name="func"/>
+  		</run>
+  	</groups>
+  	
+  </test>
 </suite> <!-- Suite -->
